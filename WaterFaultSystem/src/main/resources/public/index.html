@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Fault Reporting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Water<span>Fault</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#report">Report a Fault</a>
+        <a href="#reports">View Reports</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Report Water Faults Easily</h1>
+        <p>Help improve water services in your community. Report leaking pipes, burst pipes, water shortages, and other water supply problems.</p>
+        <a class="button" href="#report">Report a Fault</a>
+    </div>
+</section>
+
+<main>
+    <section class="report-section" id="report">
+        <h2>Submit a Water Fault Report</h2>
+        <p>Complete all fields below to report a water-related problem.</p>
+        <form id="reportForm">
+            <label for="customerName">Full Name</label>
+            <input id="customerName" name="customerName" type="text" required>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input id="phoneNumber" name="phoneNumber" type="tel" required>
+
+            <label for="faultType">Fault Type</label>
+            <select id="faultType" name="faultType" required>
+                <option value="">Select fault type</option>
+                <option value="Leaking Pipe">Leaking Pipe</option>
+                <option value="Burst Pipe">Burst Pipe</option>
+                <option value="Water Shortage">Water Shortage</option>
+                <option value="No Water Supply">No Water Supply</option>
+                <option value="Damaged Water Meter">Damaged Water Meter</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="location">Location / Address</label>
+            <input id="location" name="location" type="text" placeholder="e.g. Riverside, near the market" required>
+
+            <label for="description">Description of the Fault</label>
+            <textarea id="description" name="description" placeholder="Explain the problem and where it is happening..." required></textarea>
+
+            <button type="submit">Submit Report</button>
+        </form>
+        <p id="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="reports-section" id="reports">
+        <h2>Reported Water Faults</h2>
+        <p>View submitted reports and update their status or assign a maintenance worker.</p>
+        <button type="button" class="refresh" id="refreshButton">Refresh Reports</button>
+        <div id="reportList"><p>Loading reports...</p></div>
+    </section>
+</main>
+
+<footer>
+    <p><strong>Water Fault Reporting System</strong></p>
+    <p>Helping communities report water supply problems.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
