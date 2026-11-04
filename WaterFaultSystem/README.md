@@ -35,3 +35,13 @@ A web-based application for reporting water-related problems such as leaking pip
 5. Open http://localhost:7070 in your browser.
 
 The `fault_reports.dat` file is created automatically when the first report is submitted.
+
+### Group Members
+
+| Full Name       | StudentID|
+| --------------- | -------- |
+| Daniel F Banda  | 2410386  |
+| Ethel Kazembe   | 2410059  |
+| Patience Chabala| 2420945  |
+| Walen Mudenda   | 2410287  |
+| Caroline Kaliba | 2420984  |
